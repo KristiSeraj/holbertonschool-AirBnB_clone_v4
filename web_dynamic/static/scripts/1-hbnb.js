@@ -6,6 +6,6 @@ $(document).ready(function () {
     } else {
       delete amenityDictionary[$(this).attr('data-id')];
     }
-    console.log(amenityDictionary);
+    $('.amenities h4').text(Object.values(amenityDictionary).join(', '));
   });
 });
